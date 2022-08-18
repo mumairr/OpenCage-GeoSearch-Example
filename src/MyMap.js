@@ -20,7 +20,7 @@ import LayerGroup from 'ol/layer/Group';
 import LayerSwitcherImage from "ol-ext/control/LayerSwitcherImage";
 
 /* OpenCage GeoSearch */
-import OpenCageGeosearchControl from '@opencage/ol-opencage-geosearch';
+// import OpenCageGeosearchControl from '@opencage/ol-opencage-geosearch';
 
 let layers = [];
 let basemaps;
@@ -138,6 +138,7 @@ function MapWrapper(props) {
             position: 'topright',
         };
 
+        // eslint-disable-next-line no-undef
         var controlGeosearch = new OpenCageGeosearchControl(options);
         initialMap.addControl(controlGeosearch);
     }, [])
