@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 /* Stylesheets */
 import 'ol/ol.css';
 import 'ol-ext/dist/ol-ext.css'
+import '@opencage/ol-opencage-geosearch/ol-opencage-geosearch.css';
 import "./styles/ol.css";
 import "./styles/index.css";
 
@@ -21,6 +22,7 @@ import LayerSwitcherImage from "ol-ext/control/LayerSwitcherImage";
 
 /* OpenCage GeoSearch */
 import OpenCageGeosearchControl from '@opencage/ol-opencage-geosearch';
+
 
 let layers = [];
 let basemaps;
